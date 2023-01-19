@@ -1,0 +1,9 @@
+﻿type Author {
+    id: Int! @fromJson
+    name: String! @fromJson
+    birthdate: DateTime @fromJson
+}
+
+extend type Book {
+    author: Author
+}
